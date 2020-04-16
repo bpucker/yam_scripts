@@ -73,20 +73,18 @@ def load_multiple_fasta_file( fasta_file ):
 def identify_RBHs( data, RBH_file ):
 	"""! @brief identify RBHs between alleles """
 	
-	with open( RBH_file, "w" ) as out:
-		black_list = {}
-		for key in data.keys():
-			try:
-				value = data[ key ]
-				if data[ value ] == key:
-					try:
-						black_list[ key ]
-					except KeyError:
-						black_list.update( { value: None } )
-						out.write( key + '\t' + value + '\n' )
-			except KeyError:
-				pass
-		print "number of matched alleles: " + str( len( black_list.keys() ) )
+	black_list = {}
+	for key in data.keys():
+		try:
+			value = data[ key ]
+			if data[ value ] == key:
+				try:
+					black_list[ key ]
+				except KeyError:
+					black_list.update( { value: None } )
+		except KeyError:
+			pass
+	print "number of matched alleles: " + str( len( black_list.keys() ) )
 
 
 def main( parameters ):
@@ -122,9 +120,7 @@ def main( parameters ):
 	seqs = load_multiple_fasta_file( seq_file )
 	print "number of input sequences: " + str( len( seqs.keys() ) )
 	data = load_results_from_BLAST_result_file( blast_result_file )
-	
 	RBHs = identify_RBHs( data, RBH_file )
-	print RBH_file
 
 
 if '--prefix' in sys.argv and '--cds' in sys.argv:
