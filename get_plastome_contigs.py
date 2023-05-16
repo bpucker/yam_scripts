@@ -34,10 +34,10 @@ def load_contigs_of_interest( blast_hit_file ):
 	return list( set( contigs ) )
 
 
-assembly_file = "/vol/gf-yam/members/bpucker/20200223_plastome_chondrome/consensusPilonx3.fasta"
-blast_hit_file = "/vol/gf-yam/members/bpucker/20200223_plastome_chondrome/plastome_vs_yam.txt"
+assembly_file = "./20200223_plastome_chondrome/consensusPilonx3.fasta"
+blast_hit_file = "./20200223_plastome_chondrome/plastome_vs_yam.txt"
 
-output_file = "/vol/gf-yam/members/bpucker/20200223_plastome_chondrome/putative_plastome_contigs_final.fasta"
+output_file = "./20200223_plastome_chondrome/putative_plastome_contigs_final.fasta"
 
 seqs = load_sequences( assembly_file )
 
