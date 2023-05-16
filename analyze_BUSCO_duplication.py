@@ -3,7 +3,7 @@
 
 
 genes = []
-input_file = "/vol/gf-yam/members/bpucker/20200119_BUSCO_of_final_annotaiton/busco/run_busco_run/full_table_busco_run.tsv"
+input_file = "full_table_busco_run.tsv"
 with open( input_file, "r" ) as f:
 	line = f.readline()
 	while line:
