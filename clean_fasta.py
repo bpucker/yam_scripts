@@ -24,8 +24,8 @@ def load_seqs( multiple_fasta_file ):
 
 
 
-input_folder = "/vol/gf-yam/members/bpucker/20191202_gene_prediction_NEW/cleaned_peps/"
-output_folder = "/vol/gf-yam/members/bpucker/20191202_gene_prediction_NEW/orthofinder_input/"
+input_folder = "./cleaned_peps/"
+output_folder = "./orthofinder_input/"
 
 if not os.path.exists( output_folder ):
 	os.makedirs( output_folder )
