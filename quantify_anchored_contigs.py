@@ -2,9 +2,9 @@ import re
 
 # --- end of imports --- #
 
-fasta_size_file = "/vol/gf-yam/members/bpucker/20200214_in_silico_map/Dioscorea_dumetorum_v1.0.fasta.sizes"
-agp_file = "/vol/gf-yam/members/bpucker/20200214_in_silico_map/genetic_map.agp"
-unanchored_agp_file = "/vol/gf-yam/members/bpucker/20200214_in_silico_map/genetic_map.unplaced.agp"
+fasta_size_file = "./20200214_in_silico_map/Dioscorea_dumetorum_v1.0.fasta.sizes"
+agp_file = "./20200214_in_silico_map/genetic_map.agp"
+unanchored_agp_file = "./20200214_in_silico_map/genetic_map.unplaced.agp"
 
 contig_sizes = {}
 with open( fasta_size_file, "r" ) as f:
