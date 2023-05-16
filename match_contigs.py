@@ -140,12 +140,12 @@ def get_haplo_peps( peps, haplo_contigs, pep_output_file ):
 	print "number of surviving peptides: " + str( counter )
 
 
-input_file = "/vol/gf-yam/members/bpucker/20200327_haplophase_purging/RBH_file.txt"
-gff_file = "/vol/gf-yam/members/bpucker/20200327_haplophase_purging/Dioscorea_dumetorum_v1.0.gff"
-fasta_file = "/vol/gf-yam/members/bpucker/20200327_haplophase_purging/Dioscorea_dumetorum_v1.0.fasta"
-pep_file = "/vol/gf-yam/results/manuscript/annotation_NEW/20191207_final.aa"
+input_file = "./20200327_haplophase_purging/RBH_file.txt"
+gff_file = "./20200327_haplophase_purging/Dioscorea_dumetorum_v1.0.gff"
+fasta_file = "./20200327_haplophase_purging/Dioscorea_dumetorum_v1.0.fasta"
+pep_file = "./manuscript/annotation_NEW/20191207_final.aa"
 
-output_folder = "/vol/gf-yam/members/bpucker/20200327_haplophase_purging/"
+output_folder = "./20200327_haplophase_purging/"
 doc_file = output_folder + "20200328_docs.txt"
 final_result_file = output_folder + "20200328_yam_haploid.fasta"
 pep_output_file = output_folder + "20200328_haplo_peps.fasta"
