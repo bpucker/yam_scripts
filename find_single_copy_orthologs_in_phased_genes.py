@@ -25,8 +25,8 @@ def load_phased_genes( phasing_status_file, min_cov, max_cov ):
 
 
 
-phasing_status_file = "/vol/gf-yam/members/bpucker/20200130_find_single_copy_orthologs_in_phased_genes/phasing_status.txt"
-orthogroup_file = "/vol/gf-yam/members/bpucker/20200130_find_single_copy_orthologs_in_phased_genes/orthogroups.txt"
+phasing_status_file = "./20200130_find_single_copy_orthologs_in_phased_genes/phasing_status.txt"
+orthogroup_file = "./20200130_find_single_copy_orthologs_in_phased_genes/orthogroups.txt"
 
 min_cov = 75
 max_cov = 150
