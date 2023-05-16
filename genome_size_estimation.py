@@ -73,7 +73,7 @@ def main( arguments ):
 		read_length = 250
 	
 	jellyfish = "/vol/biotools/bin/jellyfish"
-	genome_scope = "/vol/cluster-data/bpucker/bin/genomescope-master/genomescope.R"
+	genome_scope = "./bin/genomescope-master/genomescope.R"
 	Rscript = "/usr/bin/Rscript"
 	
 	jf_file = cluster_dir + "reads.jf"
