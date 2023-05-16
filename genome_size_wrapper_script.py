@@ -139,12 +139,12 @@ def get_read_pairs( input_dir ):
 
 if __name__ == '__main__':
 	
-	info_table = "/vol/gf-yam/members/bpucker/20200214_genome_size_estimation/read_infos.txt"
-	input_dir = "/vol/cluster-data/bpucker/yam/yam_reads/"
+	info_table = "./20200214_genome_size_estimation/read_infos.txt"
+	input_dir = "./yam/yam_reads/"
 	
-	prefix = "/vol/cluster-data/bpucker/yam/yam_genome_size3/"
+	prefix = "./yam/yam_genome_size3/"
 	
-	final_result_file = "/vol/gf-yam/members/bpucker/20200214_genome_size_estimation/20200222_yam_GenomeScope.txt"
+	final_result_file = "./20200214_genome_size_estimation/20200222_yam_GenomeScope.txt"
 	
 	read_lengths = load_avg_read_lens( info_table )
 	read_file_pairs = get_read_pairs( input_dir )
@@ -169,7 +169,7 @@ if __name__ == '__main__':
 				except KeyError:
 					read_lens.append( 250 )
 	
-	script_name = "/vol/gf-yam/members/bpucker/20200214_genome_size_estimation/genome_size_estimation.py"
+	script_name = "./20200214_genome_size_estimation/genome_size_estimation.py"
 	para_jobs = 50
 	print "number of input file pairs: " + str( len( read_file_pairs ) )
 	submit_jobs_to_cluster( cluster_dir_names, read_files, kmers, para_jobs, script_name, read_lens )
