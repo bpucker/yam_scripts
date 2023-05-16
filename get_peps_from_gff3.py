@@ -128,7 +128,7 @@ def main( arguments ):
 	
 	construct_CDS_file( transcript_information, CDS_output_file, seqs )
 	
-	os.popen( "python /vol/cluster-data/bpucker/bin/scripts/transeq.py --in " + CDS_output_file + " --out " + pep_output_file )	#could be integrated into this script
+	os.popen( "python ./bin/scripts/transeq.py --in " + CDS_output_file + " --out " + pep_output_file )	#could be integrated into this script
 
 
 if '--gff' in sys.argv and '--fasta' in sys.argv and '--out' in sys.argv:
