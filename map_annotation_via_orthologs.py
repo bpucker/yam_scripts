@@ -67,7 +67,7 @@ def annotate_genes( mapping_table, data_input_file, output_file ):
 def main( arguments ):
 	""""! @brief runs all functions for mapping of annotation """
 	
-	annotation_file = "/vol/cluster-data/bpucker/bin/scripts/data/araport11_annotation.txt"
+	annotation_file = "./bin/scripts/data/araport11_annotation.txt"
 	mapping_table = load_annotation( annotation_file )
 	
 	data_input_file = arguments[ arguments.index( '--in' ) + 1 ]
