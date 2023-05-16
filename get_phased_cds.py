@@ -42,9 +42,9 @@ def load_sequences( multiple_fasta_file ):
 min_cov = 50
 max_cov = 150
 
-phasing_status_file = "/vol/gf-yam/members/bpucker/20200130_match_alleles/phasing_status.txt"
-input_cds_file = "/vol/gf-yam/results/manuscript/annotation_NEW/published_annotation/Dioscorea_dumetorum_v1.0.codingseq"
-outpt_cds_file = "/vol/gf-yam/members/bpucker/20200130_match_alleles/phased_cds.fasta"
+phasing_status_file = "./20200130_match_alleles/phasing_status.txt"
+input_cds_file = "./Dioscorea_dumetorum_v1.0.codingseq"
+outpt_cds_file = "./20200130_match_alleles/phased_cds.fasta"
 
 
 phased_genes = load_phased_genes( phasing_status_file, min_cov, max_cov )
